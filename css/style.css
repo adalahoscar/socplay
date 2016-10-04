@@ -93,6 +93,26 @@ max-width: 150px}
     padding: 10px 0px;
 }
 
+article {
+
+}
+
+.panel-body-content {
+    padding: 10px;
+}
+
+.panel-body li {
+    font-size: 10pt;
+}
+
+.panel-footer img {
+    width: 25px
+}
+
+.panel-footer a {
+    font-size: 10pt
+}
+
 .timeline .panel-outline .panel-heading:not(.icon),
 .timeline .panel-outline .panel-footer {
     display: none;
@@ -119,7 +139,7 @@ li,ul{
     font-size: 18px;
 }
 .bg-image {
-    background: url(../images/background-login.jpg) no-repeat 0 0 / cover;
+    background: url(../images/lego.jpg) no-repeat 0 0 / cover;
     position: relative;
     width: 100%;
     height: 100vh;

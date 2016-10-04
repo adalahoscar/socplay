@@ -21,8 +21,8 @@
     <div class="row display-table-row">
         <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
             <div class="logo">
-                <a hef="home.html"><img src="images/logo.png" alt="Gilkor" class="hidden-xs hidden-sm">
-                    <img src="images/logo.png" alt="Gilkor" class="visible-xs visible-sm circle-logo">
+                <a hef="home.html">
+                    <img src="images/logo.png" alt="Gilkor">
                 </a>
             </div>
             <div class="navi">
@@ -54,7 +54,12 @@
                             </div>
                         </nav>
                         <div class="search hidden-xs hidden-sm">
-                            <input type="text" placeholder="Search" id="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <span class="glyphicon glyphicon-star input-group-btn">
+                                    <button class="btn btn-default" type="button">Go!</button>
+                                </span>
+                            </div><!-- /input-group -->
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -96,26 +101,19 @@
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <p style="padding: 10px">
-                       Your Point 2000
-                        </p>
+
+                        <p style="padding: 15px"><a class="btn btn-primary btn-default" href="#" role="button">Your Point 2000</a></p>
+
                     </div>
                 </div>
             </div>
 
             <div class="col-md-8">
-                <!-- Page header -->
-                <div class="page-header">
-                    <h2>Timeline <small>using Bootstrap's <code>.panel</code>.</small></h2>
-                </div>
-                <!-- /Page header -->
 
                 <!-- Timeline -->
                 <div class="timeline">
-
                     <!-- Line component -->
                     <div class="line text-muted"></div>
-
                     <!-- Separator -->
                     <div class="separator text-muted">
                         <time>26. 3. 2015</time>
@@ -124,13 +122,11 @@
 
                     <!-- Panel -->
                     <article class="panel panel-danger panel-outline">
-
                         <!-- Icon -->
                         <div class="panel-heading icon">
                             <i class="glyphicon glyphicon-heart"></i>
                         </div>
                         <!-- /Icon -->
-
                         <!-- Body -->
                         <div class="panel-body">
                             <strong>Someone</strong> favourited your photo.
@@ -140,53 +136,9 @@
                     </article>
                     <!-- /Panel -->
 
-                    <!-- Panel -->
-                    <article class="panel panel-default panel-outline">
 
-                        <!-- Icon -->
-                        <div class="panel-heading icon">
-                            <i class="glyphicon glyphicon-picture"></i>
-                        </div>
-                        <!-- /Icon -->
 
-                        <!-- Body -->
-                        <div class="panel-body">
-                            <img class="img-responsive img-rounded" src="//placehold.it/350x150" />
-                        </div>
-                        <!-- /Body -->
 
-                    </article>
-                    <!-- /Panel -->
-
-                    <!-- Panel -->
-                    <article class="panel panel-primary">
-
-                        <!-- Icon -->
-                        <div class="panel-heading icon">
-                            <i class="glyphicon glyphicon-plus"></i>
-                        </div>
-                        <!-- /Icon -->
-
-                        <!-- Heading -->
-                        <div class="panel-heading">
-                            <h2 class="panel-title">New content added</h2>
-                        </div>
-                        <!-- /Heading -->
-
-                        <!-- Body -->
-                        <div class="panel-body">
-                            Some new content has been added.
-                        </div>
-                        <!-- /Body -->
-
-                        <!-- Footer -->
-                        <div class="panel-footer">
-                            <small>Footer is also supported!</small>
-                        </div>
-                        <!-- /Footer -->
-
-                    </article>
-                    <!-- /Panel -->
 
                     <!-- Separator -->
                     <div class="separator text-muted">
@@ -194,41 +146,10 @@
                     </div>
                     <!-- /Separator -->
 
-                    <!-- Panel -->
-                    <article class="panel panel-success">
 
-                        <!-- Icon -->
-                        <div class="panel-heading icon">
-                            <i class="glyphicon glyphicon-plus"></i>
-                        </div>
-                        <!-- /Icon -->
-
-                        <!-- Heading -->
-                        <div class="panel-heading">
-                            <h2 class="panel-title">New content added</h2>
-                        </div>
-                        <!-- /Heading -->
-
-                        <!-- Body -->
-                        <div class="panel-body">
-                            Anything you can do with <code>.panel</code>, can be done in timeline too!
-                        </div>
-                        <!-- /Body -->
-
-                        <!-- List group -->
-                        <ul class="list-group">
-                            <li class="list-group-item">Like</li>
-                            <li class="list-group-item">list</li>
-                            <li class="list-group-item">groups</li>
-                            <li class="list-group-item">and</li>
-                            <li class="list-group-item">tables</li>
-                        </ul>
-
-                    </article>
-                    <!-- /Panel -->
 
                     <!-- Panel -->
-                    <article class="panel panel-info panel-outline">
+                    <article class="panel panel-info">
 
                         <!-- Icon -->
                         <div class="panel-heading icon">
@@ -238,35 +159,187 @@
 
                         <!-- Body -->
                         <div class="panel-body">
-                            That is all.
+                            <img class="img-responsive img-rounded" src="images/lego.jpg" />
+                            <h3>
+                                Shopping Voucher Lego Land
+                            </h3>
+                            <div class="user-detail">
+                                <div class="post-meta">
+                                    <div class="asker-meta">
+                                        <span class="qa-message-who">
+                                            <span class="qa-message-who-pad">by </span>
+                                            <span class="qa-message-who-data"><a href="#">Lego Land</a></span>
+                                        </span>
+                                        <div class="timeline-footer text-right">
+                                            <p class="text-right btn btn-info">100 point</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="col-md-4">
+                                <p style="color: #999">DATE</p>
+                                <span class="qa-message-what">14 Aug 2016</span>
+                            </div>
+                            <div class="col-md-4">
+                                <p style="color: #999">LOCATION</p>
+                                <span class="qa-message-what">Mall of Indonesia</span>
+                            </div>
+                            <div class="col-md-4">
+                                <p style="color: #999">PERIODE</p>
+                                <span class="qa-message-what">August</span>
+                            </div>
+
+                        <hr>
+                        <!-- /Body -->
+
+                            Datang dan berbelanja di Lego Land senilai minimal Rp 100.000,00 .
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Buy Product</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Check in</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Share</li>
+                        </div>
+                        <div class="panel-footer">
+                            <small>Complete Missoon</small>
+                            <span>
+                                <a href="" data-toggle="tooltip" title="Marry!">
+                                    <img class="img-circle" src="images/profile.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Angel">
+                                    <img class="img-circle" src="images/profile6.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Bena">
+                                    <img class="img-circle" src="images/profile1.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Carry">
+                                    <img class="img-circle" src="images/profile2.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Dona">
+                                    <img class="img-circle" src="images/profile7.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Elen">
+                                    <img class="img-circle" src="images/profile9.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Fero">
+                                    <img class="img-circle" src="images/profile4.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Gane">
+                                    <img class="img-circle" src="images/profile8.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Hill">
+                                    <img class="img-circle" src="images/profile5.jpg" />
+                                </a>
+                                <a href="#">
+                                    More
+                                </a>
+                            </span>
+                        </div>
+                    </article>
+                    <!-- /Panel -->
+
+
+                    <!-- Panel -->
+                    <article class="panel panel-info">
+
+                        <!-- Icon -->
+                        <div class="panel-heading icon">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                        </div>
+                        <!-- /Icon -->
+
+                        <!-- Body -->
+                        <div class="panel-body panel-body-content">
+                            <img class="img-responsive img-rounded" src="images/funtastic_ggp.jpg" />
+                            <h3>
+                                Shopping Funtastic Grand Galaxy Park Mall
+                            </h3>
+
+                            <div class="user-detail">
+                                <div class="post-meta">
+                                    <div class="asker-meta">
+                                        <span class="qa-message-who">
+                                            <span class="qa-message-who-pad">by </span>
+                                            <span class="qa-message-who-data"><a href="#">Lego Land</a></span>
+
+                                        </span>
+                                        <div class="timeline-footer text-right">
+                                            <p class="text-right btn btn-info">100 point</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="col-md-4">
+                                <p style="color: #999">DATE</p>
+                                <span class="qa-message-what">14 Aug 2016</span>
+                            </div>
+                            <div class="col-md-4">
+                                <p style="color: #999">LOCATION</p>
+                                <span class="qa-message-what">Mall of Indonesia</span>
+                            </div>
+                            <div class="col-md-4">
+                                <p style="color: #999">PERIODE</p>
+                                <span class="qa-message-what">August</span>
+                            </div>
                         </div>
                         <!-- /Body -->
+                        <div class="panel-body">
+                            Datang dan berbelanja di Lego Land senilai minimal Rp 100.000,00 .
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Buy Product</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Check in</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Share</li>
+                        </div>
+                        <div class="panel-footer">
+                            <small>Complete Missoon</small>
+                            <span>
+                                <a href="" data-toggle="tooltip" title="Marry!">
+                                    <img style="width: 35px" class="img-circle" src="images/profile.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Angel">
+                                    <img style="width: 35px" class="img-circle" src="images/profile6.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Bena">
+                                    <img style="width: 35px" class="img-circle" src="images/profile1.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Carry">
+                                    <img style="width: 35px" class="img-circle" src="images/profile2.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Dona">
+                                    <img style="width: 35px" class="img-circle" src="images/profile7.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Elen">
+                                    <img style="width: 35px" class="img-circle" src="images/profile9.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Fero">
+                                    <img style="width: 35px" class="img-circle" src="images/profile4.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Gane">
+                                    <img style="width: 35px" class="img-circle" src="images/profile8.jpg" />
+                                </a>
+                                <a href="" data-toggle="tooltip" title="Hill">
+                                    <img style="width: 35px" class="img-circle" src="images/profile5.jpg" />
+                                </a>
+                                <a href="#">
+                                    More
+                                </a>
+
+                            </span>
+
+                        </div>
 
                     </article>
                     <!-- /Panel -->
 
-                </div>
-                <!-- /Timeline -->
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- Timeline -->
-                <div class="timeline">
-                    <!-- Line component -->
-
                     <!-- Panel -->
-                    <article class="panel panel-default panel-outline">
+                    <article class="panel panel-info">
+
+                        <!-- Icon -->
+                        <div class="panel-heading icon">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                        </div>
+                        <!-- /Icon -->
+
                         <!-- Body -->
                         <div class="panel-body">
                             <img class="img-responsive img-rounded" src="images/lego.jpg" />
@@ -279,7 +352,7 @@
                                     <div class="asker-meta">
                                         <span class="qa-message-who">
                                             <span class="qa-message-who-pad">by </span>
-                                            <span class="qa-message-who-data"><a href="#">Oleg Kolesnichenko</a></span>
+                                            <span class="qa-message-who-data"><a href="#">Lego Land</a></span>
 
                                         </span>
                                         <div class="timeline-footer text-right">
@@ -303,15 +376,13 @@
                                 <span class="qa-message-what">August</span>
                             </div>
                         </div>
-
+                        <!-- /Body -->
                         <div class="panel-body">
                             Datang dan berbelanja di Lego Land senilai minimal Rp 100.000,00 .
                             <li><i class="fa fa-check" aria-hidden="true"></i>Buy Product</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i>Check in</li>
                             <li><i class="fa fa-check" aria-hidden="true"></i>Share</li>
                         </div>
-
-                        <!-- /Body -->
                         <div class="panel-footer">
                             <small>Complete Missoon</small>
                             <span>
@@ -349,133 +420,7 @@
                             </span>
 
                         </div>
-                    </article>
-                    <!-- /Panel -->
 
-
-                    <article class="panel panel-default panel-outline">
-                        <!-- Body -->
-                        <div class="panel-body">
-                            <img class="img-responsive img-rounded" src="images/Hobbycon_GGP.jpg" />
-                            <h3>
-                                Shopping Vocher Lego Land
-                            </h3>
-
-                            <div class="user-detail">
-                                <div class="post-meta">
-                                    <div class="asker-meta">
-                                        <span class="qa-message-who">
-                                            <span class="qa-message-who-pad">by </span>
-                                            <span class="qa-message-who-data"><a href="#">Oleg Kolesnichenko</a></span>
-
-                                        </span>
-                                        <div class="timeline-footer text-right">
-                                            <p class="text-right btn btn-info">100 point</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <hr>
-                            <div class="col-md-4">
-                                <p style="color: #999">DATE</p>
-                                <span class="qa-message-what">14 Aug 2016</span>
-                            </div>
-                            <div class="col-md-4">
-                                <p style="color: #999">LOCATION</p>
-                                <span class="qa-message-what">Mall of Indonesia</span>
-                            </div>
-                            <div class="col-md-4">
-                                <p style="color: #999">PERIODE</p>
-                                <span class="qa-message-what">August</span>
-                            </div>
-                        </div>
-
-                        <div class="panel-body">
-                            Datang dan berbelanja di Lego Land senilai minimal Rp 100.000,00 .
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Buy Product</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Check in</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Share</li>
-                        </div>
-
-                        <!-- /Body -->
-                        <div class="panel-footer">
-                            <small>Complete Missoon</small>
-                            <span>
-                                <a href="" data-toggle="tooltip" title="Marry!">
-                                    <img style="width: 35px" class="img-circle" src="images/profile.jpg" />
-                                </a>
-                                <a href="" data-toggle="tooltip" title="Angel">
-                                    <img style="width: 35px" class="img-circle" src="images/profile6.jpg" />
-                                </a>
-                                <a href="" data-toggle="tooltip" title="Bena">
-                                    <img style="width: 35px" class="img-circle" src="images/profile1.jpg" />
-                                </a>
-                                <a href="" data-toggle="tooltip" title="Carry">
-                                    <img style="width: 35px" class="img-circle" src="images/profile2.jpg" />
-                                </a>
-                                <a href="" data-toggle="tooltip" title="Dona">
-                                    <img style="width: 35px" class="img-circle" src="images/profile7.jpg" />
-                                </a>
-                                <a href="" data-toggle="tooltip" title="Elen">
-                                    <img style="width: 35px" class="img-circle" src="images/profile9.jpg" />
-                                </a>
-                                <a href="" data-toggle="tooltip" title="Fero">
-                                    <img style="width: 35px" class="img-circle" src="images/profile4.jpg" />
-                                </a>
-                                <a href="" data-toggle="tooltip" title="Gane">
-                                    <img style="width: 35px" class="img-circle" src="images/profile8.jpg" />
-                                </a>
-                                <a href="" data-toggle="tooltip" title="Hill">
-                                    <img style="width: 35px" class="img-circle" src="images/profile5.jpg" />
-                                </a>
-                                <a href="#">
-                                    More
-                                </a>
-
-                            </span>
-
-                        </div>
-                    </article>
-
-
-
-
-                    <!-- Panel -->
-                    <article class="panel panel-info panel-outline">
-
-                        <!-- Icon -->
-                        <div class="panel-heading icon">
-                            <i class="glyphicon glyphicon-info-sign"></i>
-                        </div>
-                        <!-- /Icon -->
-                        <!-- Body -->
-                        <div class="panel-body">
-                            Start Mission
-                        </div>
-                        <!-- /Body -->
-                    </article>
-                    <!-- /Panel -->
-
-                    <!-- Separator -->
-                    <div class="separator text-muted">
-                        <time>25. 3. 2015</time>
-                    </div>
-                    <!-- /Separator -->
-
-                    <!-- Panel -->
-                    <article class="panel panel-info panel-outline">
-
-                        <!-- Icon -->
-                        <div class="panel-heading icon">
-                            <i class="glyphicon glyphicon-info-sign"></i>
-                        </div>
-                        <!-- /Icon -->
-                        <!-- Body -->
-                        <div class="panel-body">
-                            Start The Game
-                        </div>
-                        <!-- /Body -->
                     </article>
                     <!-- /Panel -->
 
@@ -484,12 +429,12 @@
 
                         <!-- Icon -->
                         <div class="panel-heading icon">
-                            <i class="glyphicon glyphicon-info-sign"></i>
+                            <i class="glyphicon glyphicon glyphicon-certificate"></i>
                         </div>
                         <!-- /Icon -->
                         <!-- Body -->
                         <div class="panel-body">
-                            Login Account
+                            <strong>Start</strong>Start Mission
                         </div>
                         <!-- /Body -->
                     </article>
@@ -499,7 +444,20 @@
 
                 </div>
                 <!-- /Timeline -->
+
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
             <div class="col-md-4 sidebar-offcanvas" id="sidebar">
 
