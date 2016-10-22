@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>SOC Play</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>SOC Play</title>
-
     <meta name="description" content="Gilkor">
     <meta name="author" content="Gilkor">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:100,300,300i,400,400i,500,700i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 <body>
 
@@ -27,13 +25,21 @@
             </div>
             <div class="navi">
                 <ul>
-                    <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
-                    <li><a href="#"><i class="fa fa-trophy" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Leader Board</span></a></li>
-                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Friend</span></a></li>
-                    <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Info</span></a></li>
-                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Help</span></a></li>
-                    <li><a href="#"><i class="fa fa-gear" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li>
+                    <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
+                    <li><a href="#"><i class="fa fa-trophy" aria-hidden="true"></i><span>Leader Board</span></a></li>
+                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>Friend</span></a></li>
+                    <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i><span>Info</span></a></li>
+                    <li><a href="#"><i class="fa fa-gear" aria-hidden="true"></i><span>Setting</span></a></li>
                 </ul>
+                <div class="profile-header-container">
+                    <div class="profile-header-img">
+                        <img class="img-circle" src="images/profile.jpg" />
+                        <!-- badge -->
+                        <div class="rank-label-container">
+                            <span class="label label-default rank-label"><i class="fa fa-trophy" aria-hidden="true"></i>2000 POINT</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -43,7 +49,7 @@
             <div class="row">
                 <header>
                     <div class="col-md-7">
-                        <nav class="navbar-default pull-left">
+                        <nav class="navbar-default pull-left nav-top">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
                                     <span class="sr-only">Toggle navigation</span>
@@ -62,19 +68,17 @@
                             </span>
                         </div>
                     </div>
+
                     <div class="col-md-5">
                         <div class="header-rightside">
                             <ul class="list-inline header-top pull-right">
-                                <li style="letter-spacing: 5px;"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                                <li style="letter-spacing: 5px;">
+                                <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                <li>
                                     <a href="#" class="icon-info">
                                         <i class="fa fa-bell" aria-hidden="true"></i>
                                         <span class="label label-primary">3</span>
                                     </a>
                                 </li>
-
-                                <a  href="#" class="dropdown-toggle account" data-toggle="dropdown">
-                                    <i class="fa fa-angle-down pull-right"></i>
                                     <div class="user-mini pull-right">
 									<span>
 									<img src="images/profile.jpg" class="img-circle" alt="avatar" />
@@ -82,7 +86,6 @@
                                         <span class="welcome">Welcome,</span>
                                         <span>Jane</span>
                                     </div>
-                                </a>
                             </ul>
                         </div>
                     </div>
@@ -92,627 +95,421 @@
             <div class="row">
                 <div class="header-nav">
                     <div class="col-md-8">
-                                    <div class="tabbable-panel">
-                                        <div class="tabbable-line">
-                                            <ul class="nav nav-tabs">
-                                                <li class="active">
-                                                    <a href="#tab_default_1" data-toggle="tab">
-                                                        <i class="fa fa-bell" aria-hidden="true"></i>  Activities
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab_default_2" data-toggle="tab">
-                                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>  Programs
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab_default_3" data-toggle="tab">
-                                                        <i class="fa fa-gift" aria-hidden="true"></i>  Gift</a>
-                                                    </a>
-                                                </li>
+                        <div class="tabbable-panel">
+                            <div class="tabbable-line">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a href="#tab_default_1" data-toggle="tab">
+                                            <i class="fa fa-bell" aria-hidden="true"></i><span class="hidden-xs hidden-sm"> Activities</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab_default_2" data-toggle="tab">
+                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i><span class="hidden-xs hidden-sm"> Mission</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab_default_3" data-toggle="tab">
+                                            <i class="fa fa-gift" aria-hidden="true"></i><span class="hidden-xs hidden-sm"> Gift</span>
+                                        </a>
+                                    </li>
 
-                                            </ul>
-                                            <div class="tab-content">
-                                                <div class="tab-pane active" id="tab_default_1">
-                                                    <!-- Timeline -->
-                                                    <div class="timeline">
-                                                        <!-- Line component -->
-                                                        <div class="line text-muted"></div>
-                                                        <!-- Separator -->
-                                                        <div class="separator text-muted">
-                                                            <time>26. 3. 2015</time>
-                                                        </div>
-                                                        <!-- /Separator -->
-
-                                                        <!-- Panel -->
-                                                        <article class="panel panel-danger panel-outline">
-                                                            <!-- Icon -->
-                                                            <div class="panel-heading icon">
-                                                                <i class="glyphicon glyphicon-heart"></i>
-                                                            </div>
-                                                            <!-- /Icon -->
-                                                            <!-- Body -->
-                                                            <div class="panel-body">
-                                                                <strong>Someone</strong> favourited your photo.
-                                                            </div>
-                                                            <!-- /Body -->
-
-                                                        </article>
-                                                        <!-- /Panel -->
-
-
-                                                        <!-- Separator -->
-                                                        <div class="separator text-muted">
-                                                            <time>25. 3. 2015</time>
-                                                        </div>
-                                                        <!-- /Separator -->
-
-
-                                                        <!-- Panel -->
-                                                        <article class="panel panel-info">
-
-                                                            <!-- Icon -->
-                                                            <div class="panel-heading icon">
-                                                                <i class="glyphicon glyphicon-info-sign"></i>
-                                                            </div>
-                                                            <!-- /Icon -->
-
-                                                            <!-- Body -->
-                                                            <div class="panel-body">
-                                                                <img class="img-responsive img-rounded" src="images/lego.jpg" />
-                                                                <h3>
-                                                                    Shopping Voucher Lego Land
-                                                                </h3>
-                                                                <div class="user-detail">
-                                                                    <div class="post-meta">
-                                                                        <div class="asker-meta">
-                                                                            <span class="qa-message-who">
-                                                                                <span class="qa-message-who-pad">by </span>
-                                                                                <span class="qa-message-who-data"><a href="#">Lego Land</a></span>
-                                                                            </span>
-                                                                            <div class="timeline-footer text-right">
-                                                                                <p class="text-right btn btn-info">100 point</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <hr>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">DATE</p>
-                                                                    <span class="qa-message-what">14 Aug 2016</span>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">LOCATION</p>
-                                                                    <span class="qa-message-what">Mall of Indonesia</span>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">PERIODE</p>
-                                                                    <span class="qa-message-what">August</span>
-                                                                </div>
-
-                                                                <hr>
-                                                                <!-- /Body -->
-
-                                                                Datang dan berbelanja di Lego Land senilai minimal Rp 100.000,00 .
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Buy Product</li>
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Check in</li>
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Share</li>
-                                                            </div>
-                                                            <div class="panel-footer">
-                                                                <small>Complete Missoon</small>
-                                                                <span>
-                                                                    <a href="" data-toggle="tooltip" title="Marry!">
-                                                                        <img class="img-circle" src="images/profile.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Angel">
-                                                                        <img class="img-circle" src="images/profile6.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Bena">
-                                                                        <img class="img-circle" src="images/profile1.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Carry">
-                                                                        <img class="img-circle" src="images/profile2.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Dona">
-                                                                        <img class="img-circle" src="images/profile7.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Elen">
-                                                                        <img class="img-circle" src="images/profile9.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Fero">
-                                                                        <img class="img-circle" src="images/profile4.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Gane">
-                                                                        <img class="img-circle" src="images/profile8.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Hill">
-                                                                        <img class="img-circle" src="images/profile5.jpg" />
-                                                                    </a>
-                                                                    <a href="#">
-                                                                        More
-                                                                    </a>
-                                                                </span>
-                                                            </div>
-                                                        </article>
-                                                        <!-- /Panel -->
-
-
-                                                        <!-- Panel -->
-                                                        <article class="panel panel-info">
-
-                                                            <!-- Icon -->
-                                                            <div class="panel-heading icon">
-                                                                <i class="glyphicon glyphicon-info-sign"></i>
-                                                            </div>
-                                                            <!-- /Icon -->
-
-                                                            <!-- Body -->
-                                                            <div class="panel-body panel-body-content">
-                                                                <img class="img-responsive img-rounded" src="images/funtastic_ggp.jpg" />
-                                                                <h3>
-                                                                    Shopping Funtastic Grand Galaxy Park Mall
-                                                                </h3>
-
-                                                                <div class="user-detail">
-                                                                    <div class="post-meta">
-                                                                        <div class="asker-meta">
-                                                                            <span class="qa-message-who">
-                                                                                <span class="qa-message-who-pad">by </span>
-                                                                                <span class="qa-message-who-data"><a href="#">Lego Land</a></span>
-
-                                                                            </span>
-                                                                            <div class="timeline-footer text-right">
-                                                                                <p class="text-right btn btn-info">100 point</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <hr>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">DATE</p>
-                                                                    <span class="qa-message-what">14 Aug 2016</span>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">LOCATION</p>
-                                                                    <span class="qa-message-what">Mall of Indonesia</span>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">PERIODE</p>
-                                                                    <span class="qa-message-what">August</span>
-                                                                </div>
-                                                            </div>
-                                                            <!-- /Body -->
-                                                            <div class="panel-body">
-                                                                Datang dan berbelanja di Lego Land senilai minimal Rp 100.000,00 .
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Buy Product</li>
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Check in</li>
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Share</li>
-                                                            </div>
-                                                            <div class="panel-footer">
-                                                                <small>Complete Missoon</small>
-                                                                <span>
-                                                                    <a href="" data-toggle="tooltip" title="Marry!">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Angel">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile6.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Bena">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile1.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Carry">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile2.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Dona">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile7.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Elen">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile9.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Fero">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile4.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Gane">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile8.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Hill">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile5.jpg" />
-                                                                    </a>
-                                                                    <a href="#">
-                                                                        More
-                                                                    </a>
-
-                                                                </span>
-
-                                                            </div>
-
-                                                        </article>
-                                                        <!-- /Panel -->
-
-                                                        <!-- Panel -->
-                                                        <article class="panel panel-info">
-
-                                                            <!-- Icon -->
-                                                            <div class="panel-heading icon">
-                                                                <i class="glyphicon glyphicon-info-sign"></i>
-                                                            </div>
-                                                            <!-- /Icon -->
-
-                                                            <!-- Body -->
-                                                            <div class="panel-body">
-                                                                <img class="img-responsive img-rounded" src="images/lego.jpg" />
-                                                                <h3>
-                                                                    Shopping Vocher Lego Land
-                                                                </h3>
-
-                                                                <div class="user-detail">
-                                                                    <div class="post-meta">
-                                                                        <div class="asker-meta">
-                                                                        <span class="qa-message-who">
-                                                                            <span class="qa-message-who-pad">by </span>
-                                                                            <span class="qa-message-who-data"><a href="#">Lego Land</a></span>
-
-                                                                        </span>
-                                                                            <div class="timeline-footer text-right">
-                                                                                <p class="text-right btn btn-info">100 point</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <hr>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">DATE</p>
-                                                                    <span class="qa-message-what">14 Aug 2016</span>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">LOCATION</p>
-                                                                    <span class="qa-message-what">Mall of Indonesia</span>
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <p style="color: #999">PERIODE</p>
-                                                                    <span class="qa-message-what">August</span>
-                                                                </div>
-                                                            </div>
-                                                            <!-- /Body -->
-                                                            <div class="panel-body">
-                                                                Datang dan berbelanja di Lego Land senilai minimal Rp 100.000,00 .
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Buy Product</li>
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Check in</li>
-                                                                <li><i class="fa fa-check" aria-hidden="true"></i>Share</li>
-                                                            </div>
-                                                            <div class="panel-footer">
-                                                                <small>Complete Missoon</small>
-                                                                <span>
-                                                                    <a href="" data-toggle="tooltip" title="Marry!">
-                                                                        <img style="width: 35px" class="img-circle images-profile" src="images/profile.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Angel">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile6.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Bena">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile1.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Carry">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile2.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Dona">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile7.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Elen">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile9.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Fero">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile4.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Gane">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile8.jpg" />
-                                                                    </a>
-                                                                    <a href="" data-toggle="tooltip" title="Hill">
-                                                                        <img style="width: 35px" class="img-circle" src="images/profile5.jpg" />
-                                                                    </a>
-                                                                    <a href="#">
-                                                                        More
-                                                                    </a>
-
-                                                                </span>
-
-                                                            </div>
-
-                                                        </article>
-                                                        <!-- /Panel -->
-
-                                                        <!-- Panel -->
-                                                        <article class="panel panel-info panel-outline">
-
-                                                            <!-- Icon -->
-                                                            <div class="panel-heading icon">
-                                                                <i class="glyphicon glyphicon glyphicon-certificate"></i>
-                                                            </div>
-                                                            <!-- /Icon -->
-                                                            <!-- Body -->
-                                                            <div class="panel-body">
-                                                                <strong>Start</strong>Start Mission
-                                                            </div>
-                                                            <!-- /Body -->
-                                                        </article>
-                                                        <!-- /Panel -->
-
-
-
-                                                    </div>
-                                                    <!-- /Timeline -->
-
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab_default_1">
+                                        <!-- Timeline -->
+                                        <div class="timeline">
+                                            <p class="text-center"><strong> 3LOSSOM CELEBRATION - 3rd Anniversary GGP MALL (1 Okt - 13 Nov'2016)</strong></p>
+                                            <!-- Line component -->
+                                            <div class="line text-muted"></div>
+                                            <!-- Separator -->
+                                            <div class="separator text-muted">
+                                                <time>25. 3. 2015</time>
+                                            </div>
+                                            <article class="panel panel-info">
+                                                <div class="panel-heading icon">
+                                                    <i class="fa fa-thumbs-o-up"></i>
                                                 </div>
-                                                <div class="tab-pane" id="tab_default_2">
+                                                <div class="panel-body">
+                                                    <img class="img-responsive img-rounded-top-on" src="images/lego.jpg" />
+                                                    <div class="pad-10">
+                                                        <h3>
+                                                            Shopping Voucher Lego Land
+                                                        </h3>
 
-                                                            <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
-                                                                <ul class="event-list">
-                                                                    <li>
-                                                                        <time datetime="2014-07-20">
-                                                                            <span class="day">4</span>
-                                                                            <span class="month">Jul</span>
-                                                                            <span class="year">2014</span>
-                                                                            <span class="time">ALL DAY</span>
-                                                                        </time>
-                                                                        <img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />
-                                                                        <div class="info">
-                                                                            <h2 class="title">Independence Day</h2>
-                                                                            <p class="desc">United States Holiday</p>
-                                                                        </div>
-                                                                        <div class="social">
-                                                                            <ul>
-                                                                                <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
-                                                                                <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
-                                                                                <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </li>
+                                                        <div class="col-md-6 pad-5">
+                                                            <p>Share Social Media</p>
+                                                        </div>
+                                                        <div class="col-md-6 text-right pad-5">
+                                                            <p class="text-right btn btn-info">100 point</p>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <small>Complete Missoon</small>
+                                                    <span>
+                                                        <a href="" data-toggle="tooltip" title="Marry!">
+                                                            <img class="img-circle" src="images/profile.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Angel">
+                                                            <img class="img-circle" src="images/profile6.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Bena">
+                                                            <img class="img-circle" src="images/profile1.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Carry">
+                                                            <img class="img-circle" src="images/profile2.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Dona">
+                                                            <img class="img-circle" src="images/profile7.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Elen">
+                                                            <img class="img-circle" src="images/profile9.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Fero">
+                                                            <img class="img-circle" src="images/profile4.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Gane">
+                                                            <img class="img-circle" src="images/profile8.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Hill">
+                                                            <img class="img-circle" src="images/profile5.jpg" />
+                                                        </a>
+                                                            10+ More
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <!-- /Panel -->
 
-                                                                    <li>
-                                                                        <time datetime="2014-07-20 0000">
-                                                                            <span class="day">8</span>
-                                                                            <span class="month">Jul</span>
-                                                                            <span class="year">2014</span>
-                                                                            <span class="time">12:00 AM</span>
-                                                                        </time>
-                                                                        <div class="info">
-                                                                            <h2 class="title">One Piece Unlimited World Red</h2>
-                                                                            <p class="desc">PS Vita</p>
-                                                                            <ul>
-                                                                                <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Website</a></li>
-                                                                                <li style="width:50%;"><span class="fa fa-money"></span> $39.99</li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="social">
-                                                                            <ul>
-                                                                                <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
-                                                                                <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
-                                                                                <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </li>
+                                            <article class="panel panel-info">
+                                                <div class="panel-heading icon">
+                                                    <i class="fa fa-thumbs-o-up"></i>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img class="img-responsive img-rounded-top-on" src="images/lego.jpg" />
+                                                    <div class="pad-10">
+                                                        <h3>
+                                                            Shopping Voucher Lego Land
+                                                        </h3>
 
-                                                                    <li>
-                                                                        <time datetime="2014-07-20 2000">
-                                                                            <span class="day">20</span>
-                                                                            <span class="month">Jan</span>
-                                                                            <span class="year">2014</span>
-                                                                            <span class="time">8:00 PM</span>
-                                                                        </time>
-                                                                        <img alt="My 24th Birthday!" src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg" />
-                                                                        <div class="info">
-                                                                            <h2 class="title">Mouse0270's 24th Birthday!</h2>
-                                                                            <p class="desc">Bar Hopping in Erie, Pa.</p>
-                                                                            <ul>
-                                                                                <li style="width:33%;">1 <span class="glyphicon glyphicon-ok"></span></li>
-                                                                                <li style="width:34%;">3 <span class="fa fa-question"></span></li>
-                                                                                <li style="width:33%;">103 <span class="fa fa-envelope"></span></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="social">
-                                                                            <ul>
-                                                                                <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
-                                                                                <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
-                                                                                <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <time datetime="2014-07-31 1600">
-                                                                            <span class="day">31</span>
-                                                                            <span class="month">Jan</span>
-                                                                            <span class="year">2014</span>
-                                                                            <span class="time">4:00 PM</span>
-                                                                        </time>
-                                                                        <img alt="Disney Junior Live On Tour!" src="http://www.thechaifetzarena.com/images/main/DL13_PiratePrincess_thumb.jpg" />
-                                                                        <div class="info">
-                                                                            <h2 class="title">Disney Junior Live On Tour!</h2>
-                                                                            <p class="desc"> Pirate and Princess Adventure</p>
-                                                                            <ul>
-                                                                                <li style="width:33%;">$49.99 <span class="fa fa-male"></span></li>
-                                                                                <li style="width:34%;">$29.99 <span class="fa fa-child"></span></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                        <div class="social">
-                                                                            <ul>
-                                                                                <li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
-                                                                                <li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
-                                                                                <li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-
-
-
-
-
-
-                                                    <div class="fancy-collapse-panel">
-                                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                                            <div class="panel panel-default active">
-                                                                <div class="panel-heading" role="tab" id="heading1">
-                                                                    <h4 class="panel-title">
-                                                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                                            Shopping Funtastic 2016
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
-                                                                    <div class="panel-body">
-
-                                                                            <div class="media">
-
-                                                                                <a class="pull-left" href="#">
-                                                                                    <img class="media-object" src="images/Hobbycon_GGP.jpg">
-                                                                                </a>
-                                                                                <div class="media-body">
-                                                                                    <p>Mall of Indonesia</p>
-
-                                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                                                                                        Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</p>
-                                                                                    <ul class="list-inline list-unstyled">
-                                                                                        <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
-                                                                                        <li>|</li>
-                                                                                        <li><span><i class="glyphicon glyphicon-map-marker"></i> Grand Galaxy Park</span></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="panel panel-default">
-                                                                <div class="panel-heading" role="tab" id="heading2">
-                                                                    <h4 class="panel-title">
-                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-                                                                    <div class="panel-body">
-                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="panel panel-default">
-                                                                <div class="panel-heading" role="tab" id="heading3">
-                                                                    <h4 class="panel-title">
-                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">Collapsible Group Item #3
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-                                                                    <div class="panel-body">
-                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="panel panel-default">
-                                                                <div class="panel-heading" role="tab" id="heading4">
-                                                                    <h4 class="panel-title">
-                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">Collapsible Group Item #4
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-                                                                    <div class="panel-body">
-                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="panel panel-default">
-                                                                <div class="panel-heading" role="tab" id="heading5">
-                                                                    <h4 class="panel-title">
-                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">Collapsible Group Item #5
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                                                                    <div class="panel-body">
-                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="panel panel-default">
-                                                                <div class="panel-heading" role="tab" id="heading6">
-                                                                    <h4 class="panel-title">
-                                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">Collapsible Group Item #6
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-                                                                    <div class="panel-body">
-                                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        <div class="col-md-6 pad-5">
+                                                            <p>Share Social Media</p>
+                                                        </div>
+                                                        <div class="col-md-6 text-right pad-5">
+                                                            <p class="text-right btn btn-info">100 point</p>
                                                         </div>
                                                     </div>
-
                                                 </div>
-                                                <div class="tab-pane" id="tab_default_3">
+                                                <div class="panel-footer">
+                                                    <small>Complete Missoon</small>
+                                                    <span>
+                                                        <a href="" data-toggle="tooltip" title="Marry!">
+                                                            <img class="img-circle" src="images/profile.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Angel">
+                                                            <img class="img-circle" src="images/profile6.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Bena">
+                                                            <img class="img-circle" src="images/profile1.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Carry">
+                                                            <img class="img-circle" src="images/profile2.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Dona">
+                                                            <img class="img-circle" src="images/profile7.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Elen">
+                                                            <img class="img-circle" src="images/profile9.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Fero">
+                                                            <img class="img-circle" src="images/profile4.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Gane">
+                                                            <img class="img-circle" src="images/profile8.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Hill">
+                                                            <img class="img-circle" src="images/profile5.jpg" />
+                                                        </a>
+                                                            10+ More
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <!-- /Panel -->
 
-                                                    <div class="well">
-                                                        <div class="media">
+                                            <article class="panel panel-info">
+                                                <div class="panel-heading icon">
+                                                    <i class="fa fa-thumbs-o-up"></i>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img class="img-responsive img-rounded-top-on" src="images/lego.jpg" />
+                                                    <div class="pad-10">
+                                                        <h3>
+                                                            Shopping Voucher Lego Land
+                                                        </h3>
 
-                                                            <a class="pull-left" href="#">
-                                                                <img class="media-object" src="images/Hobbycon_GGP.jpg">
-                                                            </a>
-                                                            <div class="media-body">
-
-                                                                <div class="row">
-                                                                    <div class="col-sm-10">
-                                                                        <h3 class="pull-left">Shopping Funtastic 2016</h3>
-                                                                    </div>
-                                                                    <div class="col-sm-2" style="top: 20px;">
-                                                                        <p class="pull-right">
-                                                                            100 POIN
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-
-
-                                                                <p>Mall of Indonesia</p>
-
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-                                                                    Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</p>
-                                                                <ul class="list-inline list-unstyled">
-                                                                    <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
-
-                                                                    <li>
-                                                                        <span class="glyphicon glyphicon-star"></span>
-                                                                        <span class="glyphicon glyphicon-star"></span>
-                                                                        <span class="glyphicon glyphicon-star"></span>
-                                                                        <span class="glyphicon glyphicon-star"></span>
-                                                                        <span class="glyphicon glyphicon-star-empty"></span>
-                                                                    </li>
-                                                                    <li>|</li>
-                                                                    <li>
-                                                                        <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
-                                                                        <span><i class="fa fa-facebook-square"></i></span>
-                                                                        <span><i class="fa fa-twitter-square"></i></span>
-                                                                        <span><i class="fa fa-google-plus-square"></i></span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                        <div class="col-md-6 pad-5">
+                                                            <p>Share Social Media</p>
+                                                        </div>
+                                                        <div class="col-md-6 text-right pad-5">
+                                                            <p class="text-right btn btn-info">100 point</p>
                                                         </div>
                                                     </div>
-
                                                 </div>
+                                                <div class="panel-footer">
+                                                    <small>Complete Missoon</small>
+                                                    <span>
+                                                        <a href="" data-toggle="tooltip" title="Marry!">
+                                                            <img class="img-circle" src="images/profile.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Angel">
+                                                            <img class="img-circle" src="images/profile6.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Bena">
+                                                            <img class="img-circle" src="images/profile1.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Carry">
+                                                            <img class="img-circle" src="images/profile2.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Dona">
+                                                            <img class="img-circle" src="images/profile7.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Elen">
+                                                            <img class="img-circle" src="images/profile9.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Fero">
+                                                            <img class="img-circle" src="images/profile4.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Gane">
+                                                            <img class="img-circle" src="images/profile8.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Hill">
+                                                            <img class="img-circle" src="images/profile5.jpg" />
+                                                        </a>
+                                                            10+ More
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <!-- /Panel -->
+
+                                            <article class="panel panel-info">
+                                                <div class="panel-heading icon">
+                                                    <i class="fa fa-thumbs-o-up"></i>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <img class="img-responsive img-rounded-top-on" src="images/lego.jpg" />
+                                                    <div class="pad-10">
+                                                        <h3>
+                                                            Shopping Voucher Lego Land
+                                                        </h3>
+
+                                                        <div class="col-md-6 pad-5">
+                                                            <p>Share Social Media</p>
+                                                        </div>
+                                                        <div class="col-md-6 text-right pad-5">
+                                                            <p class="text-right btn btn-info">100 point</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <small>Complete Missoon</small>
+                                                    <span>
+                                                        <a href="" data-toggle="tooltip" title="Marry!">
+                                                            <img class="img-circle" src="images/profile.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Angel">
+                                                            <img class="img-circle" src="images/profile6.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Bena">
+                                                            <img class="img-circle" src="images/profile1.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Carry">
+                                                            <img class="img-circle" src="images/profile2.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Dona">
+                                                            <img class="img-circle" src="images/profile7.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Elen">
+                                                            <img class="img-circle" src="images/profile9.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Fero">
+                                                            <img class="img-circle" src="images/profile4.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Gane">
+                                                            <img class="img-circle" src="images/profile8.jpg" />
+                                                        </a>
+                                                        <a href="" data-toggle="tooltip" title="Hill">
+                                                            <img class="img-circle" src="images/profile5.jpg" />
+                                                        </a>
+                                                            10+ More
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <!-- /Panel -->
+
+                                            <!-- Panel -->
+                                            <article class="panel panel-info panel-outline">
+                                                <!-- Icon -->
+                                                <div class="panel-heading icon">
+                                                    <i class="glyphicon glyphicon glyphicon-certificate"></i>
+                                                </div>
+                                                <!-- /Icon -->
+                                                <!-- Body -->
+                                                <div class="panel-body">
+                                                    <strong>Start</strong> Start Mission
+                                                </div>
+                                                <!-- /Body -->
+                                            </article>
+                                            <!-- /Panel -->
+                                        </div>
+                                        <!-- /Timeline -->
+                                    </div>
+
+                                    <div class="tab-pane" id="tab_default_2">
+
+                                        <div class="well">
+                                            <div class="media">
+                                                <ul class="event-list">
+                                                    <li>
+                                                        <time datetime="2014-07-20">
+                                                            <span class="day">4</span>
+                                                            <span class="month">Oct</span>
+                                                        </time>
+                                                        <img alt="Hobbycon GGP" src="images/blossom.jpg" />
+                                                        <div class="info">
+                                                            <h2 class="title"><a href="#">GRAND OPENING</a></h2>
+                                                            <p class="desc">By : <a href="#">Kidzoona</a></p>
+                                                            <ul>
+                                                                <li style="width:50%;"><a href="#website"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
+                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date 4 July 2016</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="social">
+                                                            <ul>
+                                                                <li style="width:100%; background-color: rgb(75, 110, 168); color: #fff;">1000 Point</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="well">
+                                            <div class="media">
+                                                <ul class="event-list">
+                                                    <li>
+                                                        <time datetime="2014-07-20">
+                                                            <span class="day">1</span>
+                                                            <span class="month">Oct</span>
+                                                        </time>
+                                                        <img alt="Hobbycon GGP" src="images/funtastic_ggp.jpg" />
+                                                        <div class="info">
+                                                            <h2 class="title"><a href="#">SHOPPING FUNTASTIC</a></h2>
+                                                            <p class="desc">By : <a href="#">Kidzoona</a></p>
+                                                            <ul>
+                                                                <li style="width:50%;"><a href="#website"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
+                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date 4 July 2016</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="social">
+                                                            <ul>
+                                                                <li style="width:100%; background-color: rgb(75, 110, 168); color: #fff;">1000 Point</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="well">
+                                            <div class="media">
+                                                <ul class="event-list">
+                                                    <li>
+                                                        <time datetime="2014-07-20">
+                                                            <span class="day">2</span>
+                                                            <span class="month">Oct</span>
+                                                        </time>
+                                                        <img alt="Hobbycon GGP" src="images/Hobbycon_GGP.jpg" />
+                                                        <div class="info">
+                                                            <h2 class="title"><a href="#">HOBBYCON</a></h2>
+                                                            <p class="desc">By : <a href="#">Kidzoona</a></p>
+                                                            <ul>
+                                                                <li style="width:50%;"><a href="#website"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
+                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date 4 July 2016</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="social">
+                                                            <ul>
+                                                                <li style="width:100%; background-color: rgb(75, 110, 168); color: #fff;">1000 Point</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="well">
+                                            <div class="media">
+                                                <ul class="event-list">
+                                                    <li>
+                                                        <time datetime="2014-07-20">
+                                                            <span class="day">2</span>
+                                                            <span class="month">October</span>
+                                                        </time>
+                                                        <img alt="Hobbycon GGP" src="images/kidzoona.jpg" />
+                                                        <div class="info">
+                                                            <h2 class="title"><a href="#">GRAND OPENING</a></h2>
+                                                            <p class="desc">By : <a href="#">Kidzoona</a></p>
+                                                            <ul>
+                                                                <li style="width:50%;"><a href="#website"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
+                                                                <li style="width:50%;"><span class="fa fa-calendary"></span> End Date 4 July 2016</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="social">
+                                                            <ul>
+                                                                <li style="width:100%; background-color: rgb(75, 110, 168); color: #fff;">1000 Point</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                    </div>
+
+
+                                    <div class="tab-pane" id="tab_default_3">
+                                        <div class="well">
+                                            <div class="media">
+                                                <ul class="event-list">
+                                                    <li>
+                                                        <img alt="Hobbycon GGP" src="images/popcorn.png" />
+                                                        <div class="info">
+                                                            <h2 class="title"><a href="#">3LOSSOM CELEBRATION - 3rd Anniversary GGP MALL (1 Okt - 13 Nov'2016)</a></h2>
+                                                            <p class="desc">By : <a href="#">Grand Glaxy Park</a></p>
+                                                            <p class="desc">
+                                                                Get Free Popcorn From Blitz cinemplax
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     <div class="col-md-4">
+                        <div class="tabbable-panel">
+                            <div class="tabbable-line">
+                                <div class="title-latestprogram">
+                                    <i class="fa fa-bell" aria-hidden="true"></i><span class="hidden-xs hidden-sm"> Latest Programs</span>
+                                </div>
 
-                        <p style="padding: 15px"><a class="btn btn-primary btn-default" href="#" role="button">Your Point 2000</a></p>
-
+                                <div class="tab-content">
+                                    <img class="img-responsive" src="images/blossom.jpg">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -729,31 +526,6 @@
 </div>
 
 
-
-<!-- Modal -->
-<div id="add_project" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header login-header">
-                <button type="button" class="close" data-dismiss="modal">×</button>
-                <h4 class="modal-title">Add Project</h4>
-            </div>
-            <div class="modal-body">
-                <input type="text" placeholder="Project Title" name="name">
-                <input type="text" placeholder="Post of Post" name="mail">
-                <input type="text" placeholder="Author" name="passsword">
-                <textarea placeholder="Desicrption"></textarea>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="cancel" data-dismiss="modal">Close</button>
-                <button type="button" class="add-project" data-dismiss="modal">Save</button>
-            </div>
-        </div>
-
-    </div>
-</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
