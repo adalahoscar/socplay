@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <title>SOC Play</title>
+    <link href="images/fav.png" name="favicon" rel="shortcut icon" type="image/png" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Gilkor">
     <meta name="author" content="Gilkor">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -25,18 +25,18 @@
             </div>
             <div class="navi">
                 <ul>
-                    <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
-                    <li><a href="#"><i class="fa fa-trophy" aria-hidden="true"></i><span>Leader Board</span></a></li>
-                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>Friend</span></a></li>
-                    <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i><span>Info</span></a></li>
-                    <li><a href="#"><i class="fa fa-gear" aria-hidden="true"></i><span>Setting</span></a></li>
+                    <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="#"><i class="fa fa-trophy" aria-hidden="true"></i> Leader Board</a></li>
+                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Friend</a></li>
+                    <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Info</a></li>
+                    <li><a href="#"><i class="fa fa-gear" aria-hidden="true"></i> Setting</a></li>
                 </ul>
                 <div class="profile-header-container">
                     <div class="profile-header-img">
                         <img class="img-circle" src="images/profile.jpg" />
                         <!-- badge -->
                         <div class="rank-label-container">
-                            <span class="label label-default rank-label"><i class="fa fa-trophy" aria-hidden="true"></i>2000 POINT</span>
+                            <span class="label label-default rank-label"> 2000 POINT</span>
                         </div>
                     </div>
                 </div>
@@ -79,13 +79,25 @@
                                         <span class="label label-primary">3</span>
                                     </a>
                                 </li>
-                                    <div class="user-mini pull-right">
-									<span>
-									<img src="images/profile.jpg" class="img-circle" alt="avatar" />
-									</span>
-                                        <span class="welcome">Welcome,</span>
-                                        <span>Jane</span>
-                                    </div>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="images/profile.jpg" class="img-circle" alt="avatar" />
+                                        <b class="caret"></b></a>
+                                    <ul class="dropdown-menu text-center-drop">
+                                        <li>
+                                            <div class="navbar-content">
+                                                <span><a href="#">Jane Spaw</a></span>
+                                                <p class="small">
+                                                   me@jane.com
+                                                </p>
+                                                <div class="divider">
+                                                </div>
+                                                <a href="#" class="view btn-danger active">Log Out</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -119,7 +131,7 @@
                                     <div class="tab-pane active" id="tab_default_1">
                                         <!-- Timeline -->
                                         <div class="timeline">
-                                            <p class="text-center"><strong> 3LOSSOM CELEBRATION - 3rd Anniversary GGP MALL (1 Okt - 13 Nov'2016)</strong></p>
+                                            <p class="text-center font-roboto"><strong> 3LOSSOM CELEBRATION - 3rd Anniversary GGP MALL (1 Okt - 13 Nov'2016)</strong></p>
                                             <!-- Line component -->
                                             <div class="line text-muted"></div>
                                             <!-- Separator -->
@@ -376,14 +388,14 @@
                                                         </time>
                                                         <img alt="Hobbycon GGP" src="images/blossom.jpg" />
                                                         <div class="info">
-                                                            <h2 class="title"><a href="#">GRAND OPENING</a></h2>
-                                                            <p class="desc">By : <a href="#">Kidzoona</a></p>
+                                                            <h2 class="title font-roboto"><a href="#">3LOSSOM CELEBRATION - 3rd Anniversary GGP MALL</a></h2>
+                                                            <p class="desc">By : <a href="#">Blitz Cinemaplex</a></p>
                                                             <ul>
-                                                                <li style="width:50%;"><a href="#website"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
-                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date 4 July 2016</li>
+                                                                <li style="width:50%;"><a href="#"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
+                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date <strong>7 November 2016</strong></li>
                                                             </ul>
                                                         </div>
-                                                        <div class="social">
+                                                        <div class="poin">
                                                             <ul>
                                                                 <li style="width:100%; background-color: rgb(75, 110, 168); color: #fff;">1000 Point</li>
                                                             </ul>
@@ -403,14 +415,14 @@
                                                         </time>
                                                         <img alt="Hobbycon GGP" src="images/funtastic_ggp.jpg" />
                                                         <div class="info">
-                                                            <h2 class="title"><a href="#">SHOPPING FUNTASTIC</a></h2>
+                                                            <h2 class="title font-roboto"><a href="#">SHOPPING FUNTASTIC</a></h2>
                                                             <p class="desc">By : <a href="#">Kidzoona</a></p>
                                                             <ul>
                                                                 <li style="width:50%;"><a href="#website"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
-                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date 4 July 2016</li>
+                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date <strong>7 November 2016</strong></li>
                                                             </ul>
                                                         </div>
-                                                        <div class="social">
+                                                        <div class="poin">
                                                             <ul>
                                                                 <li style="width:100%; background-color: rgb(75, 110, 168); color: #fff;">1000 Point</li>
                                                             </ul>
@@ -430,14 +442,14 @@
                                                         </time>
                                                         <img alt="Hobbycon GGP" src="images/Hobbycon_GGP.jpg" />
                                                         <div class="info">
-                                                            <h2 class="title"><a href="#">HOBBYCON</a></h2>
+                                                            <h2 class="title font-roboto"><a href="#">HOBBYCON</a></h2>
                                                             <p class="desc">By : <a href="#">Kidzoona</a></p>
                                                             <ul>
                                                                 <li style="width:50%;"><a href="#website"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
-                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date 4 July 2016</li>
+                                                                <li style="width:50%;"><span class="fa fa-calendar"></span> End Date <strong>7 November 2016</strong></li>
                                                             </ul>
                                                         </div>
-                                                        <div class="social">
+                                                        <div class="poin">
                                                             <ul>
                                                                 <li style="width:100%; background-color: rgb(75, 110, 168); color: #fff;">1000 Point</li>
                                                             </ul>
@@ -457,14 +469,14 @@
                                                         </time>
                                                         <img alt="Hobbycon GGP" src="images/kidzoona.jpg" />
                                                         <div class="info">
-                                                            <h2 class="title"><a href="#">GRAND OPENING</a></h2>
+                                                            <h2 class="title font-roboto"><a href="#">GRAND OPENING</a></h2>
                                                             <p class="desc">By : <a href="#">Kidzoona</a></p>
                                                             <ul>
                                                                 <li style="width:50%;"><a href="#website"><span class="fa fa-building-o"></span> Grand Galaxy Park</a></li>
-                                                                <li style="width:50%;"><span class="fa fa-calendary"></span> End Date 4 July 2016</li>
+                                                                <li style="width:50%;"><span class="fa fa-calendary"></span> End Date <strong>7 November 2016</strong></li>
                                                             </ul>
                                                         </div>
-                                                        <div class="social">
+                                                        <div class="poin">
                                                             <ul>
                                                                 <li style="width:100%; background-color: rgb(75, 110, 168); color: #fff;">1000 Point</li>
                                                             </ul>
@@ -483,7 +495,7 @@
                                                     <li>
                                                         <img alt="Hobbycon GGP" src="images/popcorn.png" />
                                                         <div class="info">
-                                                            <h2 class="title"><a href="#">3LOSSOM CELEBRATION - 3rd Anniversary GGP MALL (1 Okt - 13 Nov'2016)</a></h2>
+                                                            <h2 class="title font-roboto"><a href="#">3LOSSOM CELEBRATION - 3rd Anniversary GGP MALL (1 Okt - 13 Nov'2016)</a></h2>
                                                             <p class="desc">By : <a href="#">Grand Glaxy Park</a></p>
                                                             <p class="desc">
                                                                 Get Free Popcorn From Blitz cinemplax
@@ -502,7 +514,7 @@
                         <div class="tabbable-panel">
                             <div class="tabbable-line">
                                 <div class="title-latestprogram">
-                                    <i class="fa fa-bell" aria-hidden="true"></i><span class="hidden-xs hidden-sm"> Latest Programs</span>
+                                    <i class="fa fa-bell" aria-hidden="true"></i><span class="hidden-xs hidden-sm"><strong> Latest Programs</strong></span>
                                 </div>
 
                                 <div class="tab-content">
