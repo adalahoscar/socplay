@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SOC Play</title>
+    <link href="images/fav.png" name="favicon" rel="shortcut icon" type="image/png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gilkor">
+    <meta name="author" content="Gilkor">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,700,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container display-table">
+    <div class="row display-table-row">
+        <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+            <div class="logo">
+                <a hef="index.html">
+                    <img src="images/logo.png" alt="Gilkor">
+                </a>
+            </div>
+            <div class="navi">
+                <ul>
+                    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-trophy" aria-hidden="true"></i> Leaderboard</a></li>
+                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Friend</a></li>
+                    <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Info</a></li>
+                    <li><a href="#"><i class="fa fa-gear" aria-hidden="true"></i> Setting</a></li>
+                </ul>
+                <div class="profile-header-container">
+                    <div class="profile-header-img">
+                        <img class="img-circle" src="images/profile.jpg" />
+                        <!-- badge -->
+                        <div class="rank-label-container">
+                            <span class="label label-default rank-label"> 2000 POINT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-10 col-sm-11 display-table-cell v-align">
+            <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+            <div class="row">
+                <header>
+                    <div class="col-md-7">
+                        <nav class="navbar-default pull-left nav-top">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="search hidden-xs hidden-sm input-group custom-search-form">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="header-rightside">
+                            <ul class="list-inline header-top pull-right">
+                                <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                <li>
+                                    <a href="#" class="icon-info">
+                                        <i class="fa fa-bell" aria-hidden="true"></i>
+                                        <span class="label label-primary">3</span>
+                                    </a>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="images/profile.jpg" class="img-circle" alt="avatar" />
+                                        <b class="caret"></b></a>
+                                    <ul class="dropdown-menu text-center-drop">
+                                        <li>
+                                            <div class="navbar-content">
+                                                <span><a href="#">Jane Spaw</a></span>
+                                                <p class="small">
+                                                    me@jane.com
+                                                </p>
+                                                <div class="divider">
+                                                </div>
+                                                <a href="#" class="view btn-danger active">Log Out</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <div class="row">
+                <div class="header-nav">
+                    <div class="col-md-8">
+                                    <div class="active">
+                                        <div class="panel panel-table animated slideInDown">
+                                                    <table class="table table-striped table-bordered table-list">
+                                                        <h3 style="font-weight: 900; text-align: center"><i class="fa fa-trophy" aria-hidden="true"></i> LEADERBOARD</h3>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="no">1</td>
+                                                            <td class="valign-name name">VINDY OTRIVANI</td>
+                                                            <td class="valign-center score">500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no">2</td>
+                                                            <td class="valign-name name">MAX HARTANTO</td>
+                                                            <td class="valign-center score">450</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no">3</td>
+
+                                                            <td class="valign-name name">RIANA TRIJAYANTI</td>
+                                                            <td class="valign-center score">400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no">4</td>
+
+                                                            <td class="valign-name name">YOAN ADELINA PAUL</td>
+                                                            <td class="valign-center score">350</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no ">5</td>
+
+                                                            <td class="valign-name name">HASNUL PAHMI</td>
+                                                            <td class="valign-center score">350</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no ">6</td>
+
+                                                            <td class="valign-name name">HASNUL PAHMI</td>
+                                                            <td class="valign-center score">350</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no ">7</td>
+
+                                                            <td class="valign-name name">HASNUL PAHMI</td>
+                                                            <td class="valign-center score">350</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no ">8</td>
+
+                                                            <td class="valign-name name">HASNUL PAHMI</td>
+                                                            <td class="valign-center score">350</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no ">9</td>
+                                                            <td class="valign-name name">HASNUL PAHMI</td>
+                                                            <td class="valign-center score">350</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="no ">10</td>
+                                                            <td class="valign-name name">HASNUL PAHMI</td>
+                                                            <td class="valign-center score">350</td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+
+                                            <div class="panel-footer text-center">
+                                                <ul class="pagination">
+                                                    <li ><a>«</a></li>
+                                                    <li class="active"><a href="#">1</a></li>
+                                                    <li ><a href="#">2</a></li>
+                                                    <li ><a href="#">3</a></li>
+                                                    <li ><a>»</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!--END panel-table-->
+                                    </div>
+
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tabbable-panel">
+                            <div class="tabbable-line">
+                                <div class="title-latestprogram">
+                                    <i class="fa fa-bell" aria-hidden="true"></i><span class="hidden-xs hidden-sm"><strong> Latest Programs</strong></span>
+                                </div>
+
+                                <div class="tab-content">
+                                    <img class="img-responsive" src="images/blossom.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 sidebar-offcanvas" id="sidebar">
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

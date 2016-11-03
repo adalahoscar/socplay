@@ -20,6 +20,15 @@ body {
     padding: 15px;
 }
 
+.leaderboard-profile {
+    width: 50px;
+    height: 50px;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 0px solid #ddd !important;
+}
+
 .headerDivider1 {
     border:1px solid #38546d;
 }
@@ -1153,13 +1162,3 @@ header {
     width: 100%;
 }
 }
-
-
-
-
-
-
-
-
-
-
